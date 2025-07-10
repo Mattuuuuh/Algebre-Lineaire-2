@@ -436,7 +436,7 @@ Alors $\dim(V_1^\perp) < \dim(V)$, et par induction, $V_1^\perp$ possède une ba
   \begin{displaymath}
     〈p_i,p_j〉 =0 \text{ si } i ≠j, \, 1 ≤i,j ≤3. 
   \end{displaymath}
-  Nous allons additionner la $2$-ème colonne de $A$  sur la $1$-ère colonne et la $2$-ème ligne  de $A$  sur la $1$-ère ligne  de $A$. C'est à dire on calcule
+  On additionne la $2$-ème colonne de $A$ à la $1$-ère colonne et la $2$-ème ligne  de $A$ à la $1$-ère ligne  de $A$. C'est à dire on calcule
   \begin{displaymath}
     P^T A P  = \left(\begin{array}{rrr}
 4 & 2 & 0 \\
@@ -452,7 +452,7 @@ P  =  \left(\begin{array}{rrr}
 0 & 0 & 1
 \end{array}\right)
   \end{displaymath}
-  Après on va additionner $2⋅$ la $1$-ère colonne sur la deuxième, et l'opération correspondante de lignes et on obtient 
+  Ensuite, on additionne $2⋅$ la $1$-ère colonne à la deuxième, et idem sur les lignes, pour obtenir
   \begin{displaymath}
     P^T A P  =
     \left(\begin{array}{rrr}
@@ -469,7 +469,7 @@ P = \left(\begin{array}{rrr}
 0 & 0 & 1
 \end{array}\right)        
 \end{displaymath}
- Après on va additionner $4⋅$ la $2$-ère colonne sur la $3$-ème, et l'opération correspondante de lignes et on obtient 
+ Finalement, on additionne $4⋅$ la $2$-ère colonne à la $3$-ème, et idem sur les lignes, et on obtient
   \begin{displaymath}
     P^T A P  =\left(\begin{array}{rrr}
 4 & 0 & 0 \\
@@ -485,7 +485,7 @@ P = \left(\begin{array}{rrr}
 0 & 0 & 1
 \end{array}\right).   
 \end{displaymath}
-Nous avons trouvé une base orthogonale
+Nous avons donc trouvé une base orthogonale
 \begin{displaymath}
   \left\{
     \begin{pmatrix}
@@ -640,7 +640,7 @@ parce que  $K^n$ muni de la forme bilinéaire symétrique $\pscal{u,v} = u^TAv$ 
 \section{Un algorithme }
 \label{sec:un-algorithme}
 
-Maintenant, nous allons formaliser la procédé appliquée dans example~\ref{exe:30}. 
+Maintenant, nous allons formaliser le procédé appliqué dans l'exemple~\ref{exe:30}. 
 \begin{algorithm}
   \label{alg:1}
   Cet algorithme trouve une matrice diagonale congruente à la matrice symétrique $A \in K^{n \times n}$ où $K$ est un corps tel que $\car(K) \neq 2$.  L'algorithme procède en $n$ itérations. Après la $(i-1)$-ème itération, $i \geq 1$, (aussi après  la $0$-ème itération) l'algorithme a transformé $A$ en une matrice congruente 
